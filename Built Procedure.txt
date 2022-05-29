@@ -6,4 +6,4 @@ To build this project, you will require the following equipment:
 - Micro Servo Motor (SG90 was used in this project)
 - Ultrasonic sensor (HC-SR04 was used in this project)
 
-Install the ESP32 setup in your arduino IDE if not already setup. Moreover, also you might need to install the ESP32 Servo library separately. The zip file of that library used is already given in this repository by the name "ServoESP32-master.zip"
+Install the ESP32 setup in your arduino IDE if not already setup. Moreover, also you might need to install the ESP32 Servo library separately. The zip file of that library used is already given in this repository by the name "ServoESP32-master.zip". Download this zip file and then open your Arduino IDE. From there, go to Sketch > Include Library > Add .ZIP Library... Now selelct the servo esp32 zip file you downloaded and select open. After doing it, restart your Arduino IDE. 
