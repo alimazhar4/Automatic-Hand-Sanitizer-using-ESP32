@@ -5,5 +5,20 @@ To build this project, you will require the following equipment:
 - Male to Female wires
 - Micro Servo Motor (SG90 was used in this project)
 - Ultrasonic sensor (HC-SR04 was used in this project)
+- any material (like double sided tape) to stick the components to the Sanitizer
 
 Install the ESP32 setup in your arduino IDE if not already setup. Moreover, also you might need to install the ESP32 Servo library separately. The zip file of that library used is already given in this repository by the name "ServoESP32-master.zip". Download this zip file and then open your Arduino IDE. From there, go to Sketch > Include Library > Add .ZIP Library... Now selelct the servo esp32 zip file you downloaded and select open. After doing it, restart your Arduino IDE. 
+
+Hardware Procedure:
+- Place the ESP32 microcontroller on the breadboard
+- connect the Vin and Gnd of ESP32 to the positive and negative terminal of the breadboard
+- now connect the ultrasonic sensor by connecting its Vcc and Gnd to positive and negative terminals of the breadboard. Then connect its Trig pin to the D12 (12 number pin) of the ESP and connect its Echo pin to the D14 pin of the ESP32.
+- now connect the by servo motor connecting its Vcc and Gnd to positive and negative terminals of the breadboard. Then connect its signal pin to the D13 pin of the ESP32. 
+- After that you can stick these components to your sanitizer. Connect the rotator fan of the servo motor to the head of the sanitizer and place the ultrasonic sensor at the bottom of the sanitizer. The breadboard and its components can be placed at the back of the sanitizer. 
+
+Now that the hardwrae is setup. You can now upload the arduino code given in this repository to your ESP32 and make your project functional. 
+Remember to have the following Tool setttings:
+- Board: "DOIT ESP32 DEVKIT V1"
+- Upload speed: "115200"
+- Flash Frequency: "80Hz"
+- Port: your available COM port, for me it was COM5
