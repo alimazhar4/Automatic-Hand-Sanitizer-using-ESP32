@@ -1,0 +1,8 @@
+To build this project, you will require the following equipment:
+- Bread Board
+- ESP 32 Microcontroller
+- Male to male wires 
+- Male to Female wires
+- Micro Servo Motor (SG90 was used in this project)
+- Ultrasonic sensor (HC-SR04 was used in this project)
+
