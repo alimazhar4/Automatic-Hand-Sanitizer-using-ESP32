@@ -1,17 +1,17 @@
 #include <Servo.h>
 
-const int trigPin = 10;
-const int echoPin = 11;
+const int trigPin = 12;
+const int echoPin = 14;
 long duration;
 int distance;
  
 Servo myServo;
 void setup() {
   // put your setup code here, to run once:
-myServo.attach(12);
+myServo.attach(13);
 pinMode(trigPin, OUTPUT); // Sets the trigPin as an Output
   pinMode(echoPin, INPUT); // Sets the echoPin as an Input
-Serial.begin(9600);
+Serial.begin(115200);
 
 }
 
@@ -22,7 +22,7 @@ distance = calculateDistance();
   
 myServo.write(0);
 if ( distance < 5)
-{ myServo.attach(12);
+{ myServo.attach(13);
 myServo.write(160);
 delay(500);
 myServo.write(0);
